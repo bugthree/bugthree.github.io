@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "函数指针与lamda"
+title: "对于C++函数指针与lamda的简单总结"
 date: 2022-09-11
 description: "对函数指针与lamda的简单总结"
 tag: Cplusplus
