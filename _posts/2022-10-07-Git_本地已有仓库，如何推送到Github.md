@@ -102,3 +102,33 @@ upstream        git@github.com:xxxx.git (push)
 
 - 推送到origin代码库(origin repository:指从开源项目Fork出来的远程代码仓库，也就是自己fork的远端项目仓库)
   - `git push origin master`
+
+## 总结参与开源项目必备的GitHub工作流程
+- Remote(远端仓库)
+  - main(master) （fork后开源项目后自己的远端仓库）
+  - upstream (开源项目的远端仓库)
+- Local(本地仓库)
+  - main(master)
+
+### 工作流程
+1. 将`Remote` 仓库 `git clone` 到`Local`
+2. 新建一个分支 `git checkout -b my-feature` 复制当前分支(master)到新分支，名字叫`my-feature`
+  - 建分支的好处：1）隔离主分支 2）利于多人合作
+3. 进行开发，开发完建议使用`gif diff`,查看当前分支与master分支有何区别？
+  - git add
+  - git commit -m ""
+4. 使用`git push origin my-feature` 将本地代码推送到远端
+5. 假设开源项目又有了`update`,我们需要同步代码
+6. 首先，在本地`git checkout master` 切换到主分支，注意此时的主分支与`my-featur`分支是不同的
+7. 使用`git pull upstream master` 将开源项目远端同步到本地，使用`git pull origin master` 将自己仓库的master分支同步到本地
+8. 切换到`git checkout my-feature` 该分支此时的状态，并非将远端代码同步到本地的代码,而是4)步的状态
+9. `git rebase master` 将`my-feature`的修改丢到一遍，然后将master最新的修改同步到`my-feature`,然后在将4）步的修改同步过来，注意这个时刻可能会有冲突。
+  - 这个过程有点类似：`git stash` 存储脏代码
+  - 同步代码，`git stash pop` 将最近的脏代码同步过来
+10. 假设继续开发， 开发结束，需要将本地修改同步到GitHub远端的`my-feature`仓库，此时可使用`git push -f origin my-feature`
+11. 假设我们觉得我们的代码没有问题，可以合并到主分支(master)，此时可以发起一个`New pull request`
+12. 合并请求，会有检视代码，如果没问题，会进行`Squash and merge` 这个操作代表，将`my-feature`分支的所有commit合并一个Commit提交上来，因为在个人功能分支`my-feature`上，会有很多很乱的commit，主分支并不希望有这么多commit，更喜欢`master commit history `更见简洁明了
+13. 一般这个时候远端的`my-featur`这个分支就可以删除掉了。GitHub有`delete branch`操作
+14. 此时本地还有`my-featur`这个分支，首先切回到主分支`git checkout master`
+15. 使用`git branch -D my-feature`删除本地分支
+16. 使用`git pull origin master` 或 `git pull upstream master` 将最新的代码同步到本地
