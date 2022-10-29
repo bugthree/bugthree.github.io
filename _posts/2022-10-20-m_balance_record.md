@@ -50,7 +50,7 @@ author: bugthree
 - Incline dumbbell press
   - 4-12 weight: 7.5kg
 
-### Tuesday, December 24, 2022
+### Tuesday, December 25, 2022
 #### back training(min)
 - Single arm dumbbell rowing:
   - 4-15 weight:7.5kg
@@ -61,7 +61,7 @@ author: bugthree
 - bent-over row
   - 4-12 weight: 14kg
 
-### Thursday, December 24, 2022
+### Thursday, December 27, 2022
 #### Shoulder training(45min)
 - Seated Overhead Dumbbell Press:
   - 4-12 weight: 14kg
@@ -73,3 +73,26 @@ author: bugthree
   - 4-8 weight: 2-6kg
 - Upright Row
   - 4-10 weight: 17kg
+
+### Firday, December 28, 2022
+#### Arm training(Biceps triceps)(45min)
+- Dumbbell curl:
+  - 4-12 weight: 11kg
+- One hand dumbbell curl:
+  - 4-12 weight: 6kg
+- barbell curl
+  - 4-8 weight: 12kg
+- barbell curl
+  - 4-8 weight: 8kg
+
+- Sitting reverse flexion and extension
+  - 4-12
+- Supine barbell arm flexion and extension
+  - 4-12 weight: 11kg
+- Sitting dumbbell arm flexion and extension
+  - 4-12 weight: 8.5kg
+- Narrow grip push
+  - 4-12 weight: 24kg
+
+- Plank
+  - 2*1 min
