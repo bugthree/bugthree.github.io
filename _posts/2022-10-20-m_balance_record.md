@@ -96,3 +96,24 @@ author: bugthree
 
 - Plank
   - 2*1 min
+
+### Sunday, December 30, 2022
+#### Leg training(20min)
+- Squats:
+  - 4-8 weight: 24kg
+
+## week2
+### Monday, December 31, 2022
+#### Chest training(60min)
+- Dumbbell Press:
+  - 4-12 weight: 7.5kg
+- Bench press:
+  - 10-weight: 44kg
+  - 8 -weight: 44kg
+  - 5 -weight: 44kg
+  - 4 -weight: 44kg
+  - 8 -weight: 30kg
+- Incline Bench Press
+  - 4-10 weight: 23kg
+- push-up
+  5 freq
